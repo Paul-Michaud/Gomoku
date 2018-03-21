@@ -6,7 +6,10 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public aspect Journalisation {
+/**
+ * Logs aspect
+ */
+public aspect Logs {
 
     pointcut callPlaceStone(int x, int y, Player player) : call(void placeStone(int, int, Player)) && args(x, y, player);
 
